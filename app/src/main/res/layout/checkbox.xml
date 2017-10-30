@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.SwitchCompat
+        android:text="語言(Language):"
+        android:textSize="15sp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/language_switcher"
+        android:layout_gravity="left"
+        android:textOff="中"
+        android:textOn="英"
+        app:showText="true"
+        android:layout_marginLeft="23dp"/>
+
+    <CheckBox
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不再顯示(Not show again)"
+        android:layout_marginLeft="17dp">
+    </CheckBox>
+
+</LinearLayout>

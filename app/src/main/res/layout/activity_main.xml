@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_main"
+    android:weightSum="1">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:weightSum="1">
+
+        <android.support.v7.widget.SwitchCompat
+            android:text="性別選擇(Gender):"
+            android:textSize="30sp"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/switcher"
+            android:textOff="男"
+            android:textOn="女"
+            app:showText="true"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true" />
+
+        <CheckBox
+            android:text="詳細結果(Detail)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="right"
+            android:id="@+id/checkResult" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/TextAnnouncement"
+        android:layout_weight="0.54" />
+
+    <SeekBar
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:max="5"
+        android:progress="3"
+        android:id="@+id/barScale" />
+
+    <SurfaceView
+        android:id="@+id/SurfaceView01"
+        android:layout_height="302dp"
+        android:layout_width="match_parent"></SurfaceView>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <ImageView
+            android:layout_width="222dp"
+            android:layout_height="102dp"
+            android:id="@+id/btnRecord"
+            app:srcCompat="@drawable/recordoff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnScore"
+            android:text="評分"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnPitch"
+            app:srcCompat="@drawable/unpitch"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnPronounce"
+            android:layout_toStartOf="@+id/btnPronounce" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnPronounce"
+            app:srcCompat="@drawable/unpronounce"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btnListen"
+            app:srcCompat="@drawable/unlisten"
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">工威阿</string>
+    <string name="start">Rec_Web</string>
+    <string name="stop">Rec_Web</string>
+    <string name="play">Rec_Web</string>
+    <string name="title_activity_catalog_activiy">CatalogActiviy</string>
+    <string name="title_activity_catalog">CatalogActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
